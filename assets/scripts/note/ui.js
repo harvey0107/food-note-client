@@ -1,6 +1,6 @@
 const onNoteSuccess = function (response) {
   $('#message').show()
-  $('#message').text('Nice workout')
+  $('#message').text('Noted')
   $('#note').trigger('reset')
   $('#message').hide()
 }
@@ -37,7 +37,7 @@ const onRecordFailure = function () {
 
 const onUpdateSuccess = function () {
   $('#message').show()
-  $('#message').text('Workout have been updated successfully')
+  $('#message').text('Note have been updated successfully')
   $('#update').trigger('reset')
   $('#message').hide(6000)
 }
@@ -50,7 +50,7 @@ const onUpdateFailure = function () {
 
 const onRemoveSuccess = function () {
   $('message').show()
-  $('#message').text('Record have been removed successfully')
+  $('#message').text('Note have been removed successfully')
   $('#remove').trigger('reset')
   $('message').hide(6000)
 }

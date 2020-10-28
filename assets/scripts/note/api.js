@@ -31,7 +31,7 @@ const update = function (data) {
     data: {
       note: {
         restaurant: data.note.restaurant,
-        cuisine: data.note.weight,
+        cuisine: data.note.cuisine,
         address: data.note.address,
         phone: data.note.phone
       }

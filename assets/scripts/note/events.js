@@ -6,7 +6,7 @@ const onNote = function (event) {
   event.preventDefault()
   const form = event.target
   const data = getFormFields(form)
-  noteapi.tracker(data)
+  noteapi.note(data)
     .then(noteui.onNoteSuccess)
     .catch(noteui.onNoteFailure)
 }
