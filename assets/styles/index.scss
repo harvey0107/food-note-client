@@ -6,11 +6,11 @@ body {
 }
 
 .slide-title{
-  font-family: 'Satisfy', cursive;
+  font-family: 'Advent Pro', sans-serif;
 }
 
 .slide-info{
-  font-family: 'Sriracha', cursive;
+  font-family: 'Advent Pro', sans-serif;
 }
 
 .all-title{
@@ -23,14 +23,14 @@ body {
 }
 #navid{
   display: flex;
-  font-family: 'Sriracha', cursive;
+  font-family: 'Advent Pro', sans-serif;
   justify-content: center;
   color: rgb(89,89,89);
 }
 
 #already-text{
   display: flex;
-  font-family: 'Sriracha', cursive;
+  font-family: 'Advent Pro', sans-serif;
   justify-content: center;
   color: rgb(89,89,89);
   font-size: 18px;
@@ -39,7 +39,7 @@ body {
 
 #already-link{
   display: flex;
-  font-family: 'Sriracha', cursive;
+  font-family: 'Advent Pro', sans-serif;
   justify-content: center;
   color: rgb(89,89,89);
   font-size: 13px;
@@ -48,7 +48,7 @@ body {
 
 #already-signup-text{
   display: flex;
-  font-family: 'Sriracha', cursive;
+  font-family: 'Advent Pro', sans-serif;
   justify-content: center;
   color: rgb(89,89,89);
   font-size: 18px;
@@ -57,7 +57,7 @@ body {
 
 #already-signup-link{
   display: flex;
-  font-family: 'Sriracha', cursive;
+  font-family: 'Advent Pro', sans-serif;
   justify-content: center;
   color: rgb(89,89,89);
   font-size: 13px;
@@ -81,34 +81,34 @@ font-size: 58px;
 font-weight: bolder;
 color: rgb(89,89,89);
 text-align: center;
+line-height: 1.6;
 }
 
 
 #notetitle {
-font-family: 'Staatliches', cursive;
-font-size: 58px;
+font-family: 'Advent Pro', sans-serif;
 font-weight: bolder;
 color: rgb(89,89,89);
 text-align: center;
 }
 
 .subtitle {
-font-size: 20px;
+font-size: 25px;
 font-weight: bold;
 color: rgb(89,89,89);
 text-align: center;
 font-style: oblique;
 justify-content: center;
 display: flex;
-font-family: 'Sriracha', cursive;
-line-height: 0.8;
+font-family: 'Advent Pro', sans-serif;
+line-height: 0.3;
 }
 
 #message{
 font-size: 23px;
 color: rgb(89,89,89);
 text-align: center;
-font-family: 'Sriracha', cursive;
+font-family: 'Advent Pro', sans-serif;
 font-weight: bold;
 justify-content: center;
 display: flex;
@@ -117,7 +117,7 @@ font-style: oblique;
 
 #sign-up-form {
 
-  font-family: 'Sriracha', cursive;
+  font-family: 'Advent Pro', sans-serif;
   color: rgb(89,89,89);
   align-items: center;
   justify-content: center;
@@ -126,7 +126,7 @@ font-style: oblique;
 }
 
 #sign-in-form {
-  font-family: 'Sriracha', cursive;
+  font-family: 'Advent Pro', sans-serif;
   color: rgb(89,89,89);
   align-items: center;
   justify-content: center;
@@ -135,7 +135,7 @@ font-style: oblique;
 }
 
 #change-password-form {
-  font-family: 'Sriracha', cursive;
+  font-family: 'Advent Pro', sans-serif;
   color: rgb(89,89,89);
   align-items: center;
   justify-content: center;
@@ -144,7 +144,7 @@ font-style: oblique;
 }
 
 #sign-out-form {
-  font-family: 'Sriracha', cursive;
+  font-family: 'Advent Pro', sans-serif;
   color: rgb(89,89,89);
   align-items: center;
   justify-content: center;
@@ -153,7 +153,7 @@ font-style: oblique;
 }
 
 #note {
-  font-family: 'Sriracha', cursive;
+  font-family: 'Advent Pro', sans-serif;
   color: rgb(89,89,89);
   align-items: center;
   justify-content: center;
@@ -162,7 +162,7 @@ font-style: oblique;
 }
 
 #update {
-  font-family: 'Sriracha', cursive;;
+  font-family: 'Advent Pro', sans-serif;
   color: rgb(89,89,89);
   align-items: center;
   justify-content: center;
@@ -171,7 +171,7 @@ font-style: oblique;
 }
 
 #record {
-  font-family: 'Sriracha', cursive;;
+  font-family: 'Advent Pro', sans-serif;
   color: rgb(89,89,89);
   align-items: center;
   justify-content: center;
@@ -180,7 +180,7 @@ font-style: oblique;
 }
 
 #remove {
-  font-family: 'Sriracha', cursive;;
+  font-family: 'Advent Pro', sans-serif;
   color: rgb(89,89,89);
   align-items: center;
   justify-content: center;
@@ -196,5 +196,5 @@ font-style: oblique;
   font-style: oblique;
   justify-content: center;
   display: flex;
-  font-family: 'Sriracha', cursive;
+  font-family: 'Advent Pro', sans-serif;
 }
