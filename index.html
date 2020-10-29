@@ -13,6 +13,15 @@
     </head>
     <body>
 
+
+      <!-- Image and text -->
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="images/icon.jpg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+    Foodie Note
+  </a>
+</nav>
+
       <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
 <ol class="carousel-indicators">
 <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -51,14 +60,35 @@
 <span class="sr-only">Next</span>
 </a>
 </div>
-      <br>
 
-      <div id='header'>
-        <p id='food-note-title'>Foodie  Note</p>
-        <p id='subtitle'>Live life according to your tastes. The Foodie Note app is the essential companion for the modern sociable foodie.</p>
-      </div>
-        <p id="message"></p>
+<div id='header'>
+  <p id='food-note-title'>Foodie  Note</p>
+  <p class='subtitle'>Live life according to your tastes. </p>
+  <p class='subtitle'>The Foodie Note app is the essential companion for the modern sociable foodie.</p>
+</div>
+  <p id="message"></p>
 
+
+<div id='navid'>
+<ul class="nav">
+  <li class="item">
+    <a class="change-password" href="#">Change Password</a>
+  </li>
+  <li class="item">
+    <a class="create-note" href="#">Create Note</a>
+  </li>
+  <li class="item">
+    <a class="see-note" href="#">See Note</a>
+  </li>
+  <li class="item">
+    <a class="update-note" href="#">Update Note</a>
+  </li>
+  <li class="item">
+    <a class="delete-note" href="#">Delete Note</a>
+  </li>
+</ul>
+</div>
+<br>
     <section>
           <form id="sign-up-form">
           <h5 class='all-title'>Sign Up:</h5>
@@ -67,6 +97,9 @@
           <input id= "sign-up-password_confirmation" name="credentials[password_confirmation]" type="password" placeholder="Re-enter Password" class="form-control form-control-sm"><br>
           <input type="submit" class="btn btn-secondary" value="Sign up"><br>
         </form>
+        <p id="already-text">Already have an account?</p>
+        <a id="already-link" href="#">Sign-in here</a>
+
     </section>
     <br>
     <section>
@@ -76,6 +109,8 @@
           <input id= "sign-in-password"name="credentials[password]" type="password" placeholder="Passwords" class="form-control form-control-sm"><br>
           <input type="submit" value="Sign In" class="btn btn-secondary"><br>
         </form>
+        <p id="already-signup-text">Click back to </p>
+        <a id="already-signup-link" href="#">Sign-up here</a>
     </section>
             <br>
     <section>

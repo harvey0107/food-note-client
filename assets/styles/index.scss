@@ -18,12 +18,61 @@ body {
   justify-content: center;
   display: flex;
   color: rgb(89,89,89);
+  font-family: 'Satisfy', cursive;
+  font-size: 25px;
+}
+#navid{
+  display: flex;
+  font-family: 'Sriracha', cursive;
+  justify-content: center;
+  color: rgb(89,89,89);
+}
+
+#already-text{
+  display: flex;
+  font-family: 'Sriracha', cursive;
+  justify-content: center;
+  color: rgb(89,89,89);
+  font-size: 18px;
+  line-height: 0.3;
+}
+
+#already-link{
+  display: flex;
+  font-family: 'Sriracha', cursive;
+  justify-content: center;
+  color: rgb(89,89,89);
+  font-size: 13px;
+  line-height: 0.3;
+}
+
+#already-signup-text{
+  display: flex;
+  font-family: 'Sriracha', cursive;
+  justify-content: center;
+  color: rgb(89,89,89);
+  font-size: 18px;
+  line-height: 0.3;
+}
+
+#already-signup-link{
+  display: flex;
+  font-family: 'Sriracha', cursive;
+  justify-content: center;
+  color: rgb(89,89,89);
+  font-size: 13px;
+  line-height: 0.3;
+}
+
+.item{
+  padding: 25px 25px 25px 25px;
 }
 
 #header {
   width: 100%;
   height: 145px;
   text-align: center;
+  line-height:1.2;
 }
 
 #food-note-title {
@@ -34,6 +83,7 @@ color: rgb(89,89,89);
 text-align: center;
 }
 
+
 #notetitle {
 font-family: 'Staatliches', cursive;
 font-size: 58px;
@@ -42,8 +92,8 @@ color: rgb(89,89,89);
 text-align: center;
 }
 
-#subtitle {
-font-size: 17px;
+.subtitle {
+font-size: 20px;
 font-weight: bold;
 color: rgb(89,89,89);
 text-align: center;
@@ -51,6 +101,7 @@ font-style: oblique;
 justify-content: center;
 display: flex;
 font-family: 'Sriracha', cursive;
+line-height: 0.8;
 }
 
 #message{
