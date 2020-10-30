@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Example</title>
+      <title>The Foodie Note</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <!-- Do not add `link` tags-->
@@ -18,8 +18,8 @@
       <!-- Image and text -->
 <nav class="navbar navbar-light bg-light">
   <a class="navbar-brand" href="#">
-    <img src="images/icon.jpg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
-    Foodie Note
+    <img src="images/icon3.jpg" width="40" height="40" class="d-inline-block align-top" alt="Foodie Note Icon" loading="lazy">
+    The Foodie Note
   </a>
 </nav>
 
@@ -33,22 +33,33 @@
 <div class="carousel-item active">
   <img src="images/food9.jpg" class="d-block w-100" alt="...">
   <div class="carousel-caption d-none d-md-block">
-    <h5 class="slide-title">Celeste</h5>
+    <h3 class="slide-title">Celeste</h3>
+    <p class="slide-info">Italian Cuisine</p>
     <p class="slide-info">502 Amsterdam Ave, New York, NY 10024</p>
   </div>
 </div>
 <div class="carousel-item">
   <img src="images/food8.jpg" class="d-block w-100" alt="...">
   <div class="carousel-caption d-none d-md-block">
-    <h5 class="slide-title">Urban Wu</h5>
+    <h3 class="slide-title">Urban Wu</h3>
+    <p class="slide-info">Chinese Cuisine</p>
     <p class="slide-info">3330 Piedmont Rd NE #22B, Atlanta, GA 30305</p>
   </div>
 </div>
 <div class="carousel-item">
-  <img src="images/food4.jpg" class="d-block w-100" alt="...">
+  <img src="images/food13.jpg" class="d-block w-100" alt="...">
   <div class="carousel-caption d-none d-md-block">
-    <h5 class="slide-title">Chez Joël</h5>
+    <h3 class="slide-title">Chez Joël</h3>
+    <p class="slide-info">New American Cuisine</p>
     <p class="slide-info">1119 W. Taylor St., Chicago, 60607, United States</p>
+  </div>
+</div>
+<div class="carousel-item">
+  <img src="images/food17.jpg" class="d-block w-100" alt="...">
+  <div class="carousel-caption d-none d-md-block">
+    <h3 class="slide-title">Hojoko</h3>
+    <p class="slide-info">Japanese Cuisine</p>
+    <p class="slide-info">1271 Boylston St, Boston, MA 02215</p>
   </div>
 </div>
 </div>
@@ -63,28 +74,31 @@
 </div>
 
 <div id='header'>
-  <p id='food-note-title'>Foodie  Note</p>
+  <p id='food-note-title'>The Foodie  Note</p>
   <p class='subtitle'>Live life according to your tastes. </p>
   <p class='subtitle'>The Foodie Note app is the essential companion for the modern sociable foodie.</p>
 </div>
-  <p id="message"></p>
-
 
 <div id='navid'>
 <ul class="nav">
   <li class="item">
+    <img src="images/icon.jpg" width="20" height="20" alt="Foodie Note Icon">
     <a class="change-password" href="#">Change Password</a>
   </li>
   <li class="item">
+    <img src="images/icon.jpg" width="20" height="20" alt="Foodie Note Icon">
     <a class="create-note" href="#">Create Note</a>
   </li>
   <li class="item">
+    <img src="images/icon.jpg" width="20" height="20" alt="Foodie Note Icon">
     <a class="see-note" href="#">See Note</a>
   </li>
   <li class="item">
+    <img src="images/icon.jpg" width="20" height="20" alt="Foodie Note Icon">
     <a class="update-note" href="#">Update Note</a>
   </li>
   <li class="item">
+    <img src="images/icon.jpg" width="20" height="20" alt="Foodie Note Icon">
     <a class="delete-note" href="#">Delete Note</a>
   </li>
 </ul>
@@ -122,6 +136,23 @@
           <input type="submit" value="Change Password" class="btn btn-secondary"><br>
         </form>
     </section>
+    <br>
+    <section>
+        <form id="remove">
+        <h5 class='all-title'>Delete Note:</h5>
+        <input type="text" placeholder="Note ID" name="note[id]" class="form-control form-control-sm">
+          <input type="submit" value="Submit" class="btn btn-secondary">
+        </form>
+    </section>
+            <br>
+            <section>
+                <div id="record">
+                <h5 class='all-title'>Records:</h5>
+                <button type="button" class="btn btn-secondary">See All Your Note Records</button>
+                <div id='sawRecords'>
+                </div>
+              </div>
+            </section>
             <br>
     <section>
         <form id="note">
@@ -133,16 +164,8 @@
           <input type="submit" value="Submit" class="btn btn-secondary"><br>
         </form>
     </section>
+          <p id="message"></p>
             <br>
-    <section>
-        <div id="record">
-        <h5 class='all-title'>Records:</h5>
-        <button type="button" class="btn btn-secondary">See All Your Note Records</button>
-        <div id='sawRecords'>
-        </div>
-      </div>
-    </section>
-    <br>
     <section>
         <form id="update">
         <h5 class='all-title'>Update Records:</h5>
@@ -150,20 +173,11 @@
         <input id= "restaurant-update" name="note[restaurant]" type="text" placeholder="Update restaurant" class="form-control form-control-sm">
         <input id= "cuisine-update" name="note[cuisine]" type="text" placeholder="Update cuisine" class="form-control form-control-sm">
         <input id= "address-update" name="note[address]" type="text" placeholder="Update address" class="form-control form-control-sm">
-        <input id= "phone-update" name="note[phone]" type="number" placeholder="Update phone" class="form-control form-control-sm">
+        <input id= "phone-update" name="note[phone]" type="text" placeholder="Update phone" class="form-control form-control-sm">
         <input type="submit" value="Submit" class="btn btn-secondary"><br>
       </form>
-
     </section>
-    <br>
-    <section>
-        <form id="remove">
-        <h5 class='all-title'>Delete Note:</h5>
-        <input type="text" placeholder="Note ID" name="note[id]" class="form-control form-control-sm">
-          <input type="submit" value="Submit" class="btn btn-secondary">
-        </form>
-    </section>
-    <br>
+      <br>
     <section>
         <form id="sign-out-form">
         <input type="submit" class="btn btn-secondary" value="Sign Out">

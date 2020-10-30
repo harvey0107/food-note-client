@@ -66,7 +66,7 @@ const onSignOutSuccess = function () {
   $('#update').hide()
   $('#record').hide()
   $('#remove').hide()
-  $('#message').text('See you later')
+  $('#message').text('See you Soon')
   $('#message').hide(10000)
   $('#navid').hide()
   $('#already-text').show()

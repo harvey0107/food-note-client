@@ -1,14 +1,14 @@
 const onNoteSuccess = function (response) {
   $('#message').show()
-  $('#message').text('Noted')
+  $('#message').text('Note created successfully ')
   $('#note').trigger('reset')
-  $('#message').hide()
+  $('#message').hide(6000)
 }
 const onNoteFailure = function () {
   $('#message').show()
   $('#message').text('Failed!')
   $('#note').trigger('reset')
-  $('#message').hide()
+  $('#message').hide(6000)
 }
 
 const onRecordSuccess = function (response) {
@@ -33,6 +33,7 @@ const onRecordFailure = function () {
   $('#message').show()
   $('#message').text('Oops, Try again!')
   $('#sign-in-form').trigger('reset')
+  $('#message').hide(6000)
 }
 
 const onUpdateSuccess = function () {
@@ -42,23 +43,24 @@ const onUpdateSuccess = function () {
   $('#message').hide(6000)
 }
 const onUpdateFailure = function () {
-  $('message').show()
+  $('#message').show()
   $('#message').text('Error')
   $('#update').trigger('reset')
   $('#message').hide(6000)
 }
 
 const onRemoveSuccess = function () {
-  $('message').show()
+  $('#message').show()
   $('#message').text('Note have been removed successfully')
   $('#remove').trigger('reset')
   $('message').hide(6000)
 }
 
 const onRemoveFailure = function () {
-  $('message').show()
+  $('#message').show()
   $('#message').text('Record was not removed!')
-  $('message').hide(6000)
+  $('#remove').trigger('reset')
+  $('#message').hide(6000)
 }
 
 module.exports = {
