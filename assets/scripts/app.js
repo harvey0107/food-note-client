@@ -25,7 +25,7 @@ $(() => {
   $('#note').on('submit', noteEvents.onNote)
   $('#record').on('click', noteEvents.onRecord)
   $('#update').on('submit', noteEvents.onUpdate)
-  $('#remove').on('submit', noteEvents.onRemove)
+  $('#sawRecords').on('click', '.remove', noteEvents.onRemove)
   $('#navid').hide()
   $('#change-password-form').hide()
   $('#sign-out-form').hide()

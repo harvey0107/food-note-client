@@ -1,3 +1,5 @@
+const noteapi = require('./api')
+
 const onNoteSuccess = function (response) {
   $('#message').show()
   $('#message').text('Note created successfully ')
@@ -19,9 +21,16 @@ const onRecordSuccess = function (response) {
   const recordlist = response.note
   let sendhtml = '<ol>'
   recordlist.forEach(data => {
-    sendhtml += `<li id=${data._id}> Restaurant:${data.restaurant}
-    \n Cuisine: ${data.cuisine} \n Address: ${data.address}
-    \n Phone: ${data.phone} \n noteId: ${data._id}</li>`
+    sendhtml += `<li id=${data._id}><div>
+    <ol class="restdata">
+    <li> Restaurant:${data.restaurant}</li>
+    <li> Cuisine: ${data.cuisine}</li>
+    <li> Address: ${data.address}</li>
+    <li> Phone: ${data.phone}</li>
+    <li> noteId: ${data._id}</li>
+    </ol>
+    <button type="button" class="remove btn btn-secondary" id=${data._id}>X</button>
+    </div></li>`
     return sendhtml
   })
   sendhtml += '</ol>'
@@ -52,14 +61,15 @@ const onUpdateFailure = function () {
 const onRemoveSuccess = function () {
   $('#message').show()
   $('#message').text('Note have been removed successfully')
-  $('#remove').trigger('reset')
-  $('message').hide(6000)
+  $('#message').hide(6000)
+  noteapi.record()
+    .then(onRecordSuccess)
+    .catch(onRecordFailure)
 }
 
 const onRemoveFailure = function () {
   $('#message').show()
   $('#message').text('Record was not removed!')
-  $('#remove').trigger('reset')
   $('#message').hide(6000)
 }
 

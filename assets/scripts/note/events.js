@@ -28,11 +28,10 @@ const onUpdate = function (event) {
 
 const onRemove = function (event) {
   event.preventDefault()
-  const form = event.target
-  const data = getFormFields(form)
-  const noteId = data.note.id
-  noteapi.remove(noteId)
+  console.log(event.target.id)
+  noteapi.remove(event.target.id)
     .then(noteui.onRemoveSuccess)
+    .then()
     .catch(noteui.onRemoveFailure)
 }
 
