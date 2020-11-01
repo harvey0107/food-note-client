@@ -28,7 +28,6 @@ const onUpdate = function (event) {
 
 const onRemove = function (event) {
   event.preventDefault()
-  console.log(event.target.id)
   noteapi.remove(event.target.id)
     .then(noteui.onRemoveSuccess)
     .then()

@@ -3,7 +3,6 @@ const noteConfig = require('./../config')
 const noteStore = require('./../store')
 
 const note = function (data) {
-  console.log('data is' + data)
   return $.ajax({
     url: noteConfig.apiUrl + '/note',
     method: 'POST',
